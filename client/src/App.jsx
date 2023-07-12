@@ -3,7 +3,11 @@ import Customizer from "./pages/customizer";
 import Home from "./pages/Home";
 
 function App() {
-	return <div className="head-text">Threejs</div>;
+	return (
+		<main className="app transition-all ease-in">
+			<div className="head-text">Threejs</div>
+		</main>
+	);
 }
 
 export default App;
