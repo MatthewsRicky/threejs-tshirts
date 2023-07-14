@@ -1,5 +1,4 @@
 import { useSnapshot } from "valtio";
-import PropTypes from "prop-types";
 
 import state from "../store";
 
@@ -24,13 +23,6 @@ const CustomButton = ({ type, title, customStyles, handleClick }) => {
 			{title}
 		</button>
 	);
-};
-
-CustomButton.propTypes = {
-	type: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired,
-	customStyles: PropTypes.string,
-	handleClick: PropTypes.func.isRequired,
 };
 
 export default CustomButton;
