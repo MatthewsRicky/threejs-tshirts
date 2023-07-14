@@ -51,6 +51,19 @@ const Customizer = () => {
 							customStyles="w-fit px-4 py-2.5 font-bold text-sm"
 						/>
 					</motion.div>
+
+					<motion.div
+						className="filtertabs-container"
+						{...slideAnimation("up")}
+					>
+						{FilterTabs.map((tab) => (
+							<Tab
+								key={tab.name}
+								tab={tab}
+								handleClick={() => {}}
+							/>
+						))}
+					</motion.div>
 				</>
 			)}
 		</AnimatePresence>
