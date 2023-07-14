@@ -45,7 +45,7 @@ const Home = () => {
 							className="flex flex-col gap-5"
 						>
 							<p className="max-w-md font-normal teext-gray-600 text-base">
-								Creeatee your unique and exclusive shirt with our brand-newe 3D
+								Creeatee your unique and exclusive shirt with our brand-new 3D
 								customization tool. <strong>Unleash your imagination</strong>{" "}
 								and define your own style.
 							</p>
