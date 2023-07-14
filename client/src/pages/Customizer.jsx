@@ -7,6 +7,13 @@ import state from "../store";
 import { download } from "../assets";
 import { downloadCanvasToImage, reader } from "../config/constants";
 import { fadeAnimation, slideAnimation } from "../config/motion";
+import {
+	AiPicker,
+	ColorPicker,
+	CustomButton,
+	FilePicker,
+	Tab,
+} from "../components";
 
 const Customizer = () => {
 	return <div>Customizer</div>;
