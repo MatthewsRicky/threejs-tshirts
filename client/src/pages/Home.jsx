@@ -26,6 +26,20 @@ const Home = () => {
 							className="w-8 h-8 object-contain"
 						/>
 					</motion.header>
+
+					<motion.div
+						className="content"
+						{...headContainerAnimation}
+					>
+						<motion.div
+							className="head-text"
+							{...headTextAnimation}
+						>
+							<h1 className="head-text">
+								LET'S <br /> DO IT.
+							</h1>
+						</motion.div>
+					</motion.div>
 				</motion.section>
 			)}
 		</AnimatePresence>
