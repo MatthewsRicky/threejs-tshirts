@@ -15,10 +15,12 @@ const Home = () => {
 	return (
 		<AnimatePresence>
 			{snap.intro && (
-				<motion.div
+				<motion.section
 					className="home"
 					{...slideAnimation("left")}
-				></motion.div>
+				>
+					Home
+				</motion.section>
 			)}
 		</AnimatePresence>
 	);
