@@ -19,7 +19,13 @@ const Home = () => {
 					className="home"
 					{...slideAnimation("left")}
 				>
-					Home
+					<motion.header {...slideAnimation("down")}>
+						<img
+							src="./threejs.png"
+							alt="logo"
+							className="w-8 h-8 object-contain"
+						/>
+					</motion.header>
 				</motion.section>
 			)}
 		</AnimatePresence>
