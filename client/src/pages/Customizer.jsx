@@ -16,7 +16,9 @@ import {
 } from "../components";
 
 const Customizer = () => {
-	return <div>Customizer</div>;
+	const snap = useSnapshot(state);
+
+	return <AnimatePresence>{!snap && <>Customizer</>}</AnimatePresence>;
 };
 
 export default Customizer;
