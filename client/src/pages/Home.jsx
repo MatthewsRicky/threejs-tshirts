@@ -1,3 +1,5 @@
+import React from "react";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useSnapshot } from "valtio";
 
@@ -37,7 +39,7 @@ const Home = () => {
 							{...headTextAnimation}
 						>
 							<h1 className="head-text">
-								LET'S <br /> DO IT.
+								LET&apos;S <br /> DO IT.
 							</h1>
 						</motion.div>
 						<motion.div
