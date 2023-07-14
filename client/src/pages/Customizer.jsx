@@ -1,24 +1,7 @@
-import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { useSnapshot } from "valtio";
-
-import config from "../config/config";
-import state from "../store";
-import { download } from "../assets";
-import { downloadCanvasToImage, reader } from "../config/constants";
-import { fadeAnimation, slideAnimation } from "../config/motion";
-import {
-	AiPicker,
-	ColorPicker,
-	CustomButton,
-	FilePicker,
-	Tab,
-} from "../components";
+import React from "react";
 
 const Customizer = () => {
-	const snap = useSnapshot(state);
-
-	return <AnimatePresence>{!snap && <>Customizer</>}</AnimatePresence>;
+	return <div>Customizer</div>;
 };
 
 export default Customizer;
