@@ -8,6 +8,7 @@ import {
 	headTextAnimation,
 	slideAnimation,
 } from "../config/motion";
+import { CustomButton } from "../components";
 
 const Home = () => {
 	const snap = useSnapshot(state);
@@ -48,6 +49,7 @@ const Home = () => {
 								customization tool. <strong>Unleash your imagination</strong>{" "}
 								and define your own style.
 							</p>
+							<CustomButton />
 						</motion.div>
 					</motion.div>
 				</motion.section>
