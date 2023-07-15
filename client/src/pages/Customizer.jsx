@@ -35,10 +35,13 @@ const Customizer = () => {
 		switch (activEditorTab) {
 			case "colorpicker":
 				return <ColorPicker />;
-				break;
+			case "filepicker":
+				return <FilePicker />;
+			case "aipicker":
+				return <AiPicker />;
 
 			default:
-				break;
+				null;
 		}
 	};
 
@@ -57,9 +60,11 @@ const Customizer = () => {
 									<Tab
 										key={tab.name}
 										tab={tab}
-										handleClick={() => {}}
+										handleClick={() => setActiveEditorTab(tab.name)}
 									/>
 								))}
+
+								{generateTabContent()}
 							</div>
 						</div>
 					</motion.div>
