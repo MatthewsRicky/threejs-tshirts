@@ -24,11 +24,23 @@ const Customizer = () => {
 	const [prompt, setPrompt] = useState("");
 	const [generatingImg, setGeneratingImg] = useState(false);
 
-	const [activEditopTab, setActiveEditorTab] = useState("");
-	const [activeFilterTab, setActiveFilterTab] = useState("");
+	const [activEditorTab, setActiveEditorTab] = useState("");
+	const [activeFilterTab, setActiveFilterTab] = useState({
+		logoShirt: true,
+		stylishShirt: false,
+	});
 
 	// show tab content deepeending on the tab
-	const generateTabContent = () => {};
+	const generateTabContent = () => {
+		switch (activEditorTab) {
+			case "colorpicker":
+				return <ColorPicker />;
+				break;
+
+			default:
+				break;
+		}
+	};
 
 	return (
 		<AnimatePresence>
