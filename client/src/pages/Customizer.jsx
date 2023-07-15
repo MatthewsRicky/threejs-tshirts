@@ -36,13 +36,25 @@ const Customizer = () => {
 			case "colorpicker":
 				return <ColorPicker />;
 			case "filepicker":
-				return <FilePicker />;
+				return (
+					<FilePicker
+						file={file}
+						setFile={setFile}
+					/>
+				);
 			case "aipicker":
 				return <AiPicker />;
 
 			default:
 				null;
 		}
+	};
+
+	const readFile = (type) => {
+		reader(file).then((result) => {
+			handldDecals(type, result);
+			setActiveEditorTab("");
+		});
 	};
 
 	return (
