@@ -18,6 +18,8 @@ const FilePicker = ({ file, setFile, readFile }) => {
 				>
 					Upload File
 				</label>
+
+				<p>{file === "" ? "no file selected" : file.name}</p>
 			</div>
 		</div>
 	);
