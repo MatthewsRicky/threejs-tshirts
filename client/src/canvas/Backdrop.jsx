@@ -4,8 +4,17 @@ import { useFrame } from "@react-three/fiber";
 import { AccumulativeShadows, RandomizedLight } from "@react-three/drei";
 
 const Backdrop = () => {
+	const shadows = useRef();
+
 	return (
-		<AccumulativeShadows position={[0, 0, -0.14]}>
+		<AccumulativeShadows
+			ref={shadows}
+			temporal
+			frames={60}
+			alphaTest={0.85}
+			scale={10}
+			position={[0, 0, -0.14]}
+		>
 			<RandomizedLight amount={4} />
 		</AccumulativeShadows>
 	);
