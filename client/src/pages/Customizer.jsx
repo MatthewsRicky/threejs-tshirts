@@ -24,6 +24,9 @@ const Customizer = () => {
 	const [prompt, setPrompt] = useState("");
 	const [generatingImg, setGeneratingImg] = useState(false);
 
+	const [activEditopTab, setActiveEditorTab] = useState("");
+	const [activeFilterTab, setActiveFilterTab] = useState("");
+
 	// show tab content deepeending on the tab
 	const generateTabContent = () => {};
 
