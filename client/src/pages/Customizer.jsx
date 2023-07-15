@@ -18,6 +18,15 @@ import {
 
 const Customizer = () => {
 	const snap = useSnapshot(state);
+
+	const [file, setFile] = useState("");
+
+	const [prompt, setPrompt] = useState("");
+	const [generatingImg, setGeneratingImg] = useState(false);
+
+	// show tab content deepeending on the tab
+	const generateTabContent = () => {};
+
 	return (
 		<AnimatePresence>
 			{!snap.intro && (
