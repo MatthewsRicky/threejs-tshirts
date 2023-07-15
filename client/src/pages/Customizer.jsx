@@ -52,7 +52,7 @@ const Customizer = () => {
 	};
 
 	const handleDecals = (type, result) => {
-		const decalType = DecalTypes[types];
+		const decalType = DecalTypes[type];
 
 		state[decalType.stateProperty] = result;
 
@@ -68,9 +68,10 @@ const Customizer = () => {
 				break;
 			case "stylishShirt":
 				state.isFullTexture = !activeFilterTab[tabname];
+				break;
 			default:
-				state.isFullTexture = true;
-				state.isLogoTexture = false;
+				state.isFullTexture = false;
+				state.isLogoTexture = true;
 		}
 	};
 
