@@ -58,8 +58,6 @@ const Customizer = () => {
 		}
 	};
 
-	const handleSubmit = async(type);
-
 	const handleDecals = (type, result) => {
 		const decalType = DecalTypes[type];
 
@@ -136,8 +134,8 @@ const Customizer = () => {
 								key={tab.name}
 								tab={tab}
 								isFilterTab
-								isActivetab=""
-								handleClick={() => {}}
+								isActivetab={activeFilterTab[tab.name]}
+								handleClick={() => handleActiveFilterTab(tab.name)}
 							/>
 						))}
 					</motion.div>
