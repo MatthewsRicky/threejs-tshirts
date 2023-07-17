@@ -48,6 +48,8 @@ const Customizer = () => {
 					<AiPicker
 						prompt={prompt}
 						setPrompt={setPrompt}
+						generatingImg={generatingImg}
+						handleSubmit={handleSubmit}
 					/>
 				);
 
@@ -55,6 +57,8 @@ const Customizer = () => {
 				null;
 		}
 	};
+
+	const handleSubmit = async(type);
 
 	const handleDecals = (type, result) => {
 		const decalType = DecalTypes[type];
