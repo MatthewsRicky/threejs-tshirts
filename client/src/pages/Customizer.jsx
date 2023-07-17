@@ -44,7 +44,7 @@ const Customizer = () => {
 					/>
 				);
 			case "aipicker":
-				return <AiPicker />;
+				return <AiPicker prompt={prompt} />;
 
 			default:
 				null;
