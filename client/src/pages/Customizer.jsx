@@ -77,9 +77,18 @@ const Customizer = () => {
 				state.isFullTexture = !activeFilterTab[tabname];
 				break;
 			default:
-				state.isFullTexture = false;
-				state.isLogoTexture = true;
+				state.isFullTexture = true;
+				state.isLogoTexture = false;
 		}
+
+		// after setting the state, activeFilterTab is updated
+
+		setActiveFilterTab((prevState) => {
+			return {
+				...prevState,
+				[tabName]: !prevState[tabName],
+			};
+		});
 	};
 
 	const readFile = (type) => {
