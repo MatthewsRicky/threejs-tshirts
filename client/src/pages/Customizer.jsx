@@ -77,8 +77,8 @@ const Customizer = () => {
 				state.isFullTexture = !activeFilterTab[tabname];
 				break;
 			default:
-				state.isFullTexture = true;
-				state.isLogoTexture = false;
+				state.isLogoTexture = true;
+				state.isFullTexture = false;
 		}
 
 		// after setting the state, activeFilterTab is updated
