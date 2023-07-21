@@ -13,9 +13,9 @@ const Shirt = () => {
 	const logoTexture = useTexture(snap.logoDecal);
 	const fullTexture = useTexture(snap.fullDecal);
 
-	useFrame((state, delta) => {
-		easing.dampC(materials.lambert1.color, snap.color, 0.25, delta);
-	});
+	useFrame((state, delta) =>
+		easing.dampC(materials.lambert1.color, snap.color, 0.25, delta)
+	);
 
 	const stateString = JSON.stringify(snap);
 
@@ -36,6 +36,7 @@ const Shirt = () => {
 						map={fullTexture}
 					/>
 				)}
+
 				{snap.isLogoTexture && (
 					<Decal
 						position={[0, 0.04, 0.15]}
