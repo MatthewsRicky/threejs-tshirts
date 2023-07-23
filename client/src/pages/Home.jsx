@@ -1,5 +1,3 @@
-import React from "react";
-
 import { motion, AnimatePresence } from "framer-motion";
 import { useSnapshot } from "valtio";
 
@@ -31,7 +29,7 @@ const Home = () => {
 					</motion.header>
 
 					<motion.div
-						className="content"
+						className="home-content"
 						{...headContainerAnimation}
 					>
 						<motion.div
